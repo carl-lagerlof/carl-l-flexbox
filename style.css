@@ -17,6 +17,7 @@ body {
 .title a {
     text-decoration: none;
     color: goldenrod;
+    
 }
 
 .menu-img {
@@ -233,4 +234,12 @@ h3 {
 
 .addcart:hover, .addcart:focus {
     background-color: gray;
+}
+
+.shipping {
+margin-left: 70rem;
+font-size: 20px;
+font-family: cursive ;
+text-decoration: underline ;
+
 }
