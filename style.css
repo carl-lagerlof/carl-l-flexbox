@@ -7,6 +7,7 @@ body {
     align-items: center;
 }
 
+/* Här stylar jag min titel och sätter den rätt på hemsidan genom att använda flex och margin */
 .title {
     display: flex; 
     justify-content: center;
@@ -25,7 +26,7 @@ body {
     height: 65%;
     width: 65%;
 }
-
+/* Här bestämmer jag med flex hur allting i min navbar ska lägga sig (space around så det är symetriskt) och så stylar jag den lite*/
 nav {
     display: flex;
     align-items: center;
@@ -36,6 +37,8 @@ nav {
     width: 100%;
     height: 50px;
 }
+
+/*  Här stylar jag själva knappen som ska bli min dropbutton*/
 .dropbtn {
     font-size: 30px;
     padding: 1px;
@@ -46,16 +49,18 @@ nav {
     width: 40px;
     
 }
-
+/* Här bestämmer jag att när man drar pilen över knappen (hover) så ska den bli grå*/ 
 .dropbtn:hover, .dropbtn:focus {
     background-color: gray;
 }
 
+/* Här bestämmer jag positioner och så att man kan ändra storleken på alla items inom menu classen*/ 
 .menu {
     position: relative;
     display: inline-block;
 }
 
+/* Här stylar jag och positionerar allting som är inuti drop knappen alltså det som kommer fram */
 .dropdown-content {
     display: none;
     position: absolute;
@@ -71,6 +76,8 @@ nav {
     text-decoration: none;
     display: block;
 }
+
+/* Här gör jag så att contentet från drop knappen (och alla andra items i navbar längre ner) ändrar färg när jag drar musen över det*/ 
 .dropdown-content a:hover {background-color: darkred;}
 
 .menu:hover .dropdown-content {display: block;}
@@ -114,13 +121,17 @@ nav {
     background-color: gray;
 }
 
+/* Här använder jag flexbox för att göra mina bästsäljar produkter vara i en 3x3 grid*/ 
 .popular {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
-
+/* Här stylar jag enskilda items style och använder flex för hur allting innuti ska ligga */
 .popular-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 32%;
     padding-bottom: 5%;
     margin-bottom: 2%;
@@ -128,12 +139,10 @@ nav {
     background-color: lightgray;
     border: none;
     cursor: pointer;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    
 }
 
-
+/* Här har jag gjort så att när man drar musen över de items i 3x3 griden så ändrar de färg men även storlek */
 .popular-item:hover, .popular-item:focus {
     background-color: gray;
     width: 34%;
@@ -144,7 +153,7 @@ nav {
     cursor: pointer;
 
 }
-
+/* Här bestämmer jag storlek på alla mina olika bilder på produkter*/
 .cola-img {
     height: 100%;
     width: 187px;
@@ -193,7 +202,7 @@ h2 {
     
 }
 
-
+/* Här bestämmer jag hur allting inuti varje produkt ska ligga genom att använda space between och align items*/
 .productinfo {
 display: flex;
 background-color: lightgray;
@@ -202,11 +211,12 @@ justify-content: space-between;
 align-items: center;
 }
 
+/* Här har jag bestämt storleken för alla bilder innuti produktinformationen*/
 .colainfo {
 height: 700px;
 
 }
-
+/* Här stylar jag texten (produktinformationen) och lade en border runt*/
 .producttext {
 justify-self: flex-end;
 align-self: center;
@@ -215,8 +225,10 @@ border: 3px black dotted;
 padding: 5px;
 }
 
+/* Här stylar jag alla mina H3 element med en border m.m */ 
 h3 {
     display: flex;
+    font-size: 30px;
     
     text-align: center;
     color: goldenrod;
@@ -224,6 +236,7 @@ h3 {
     border: 5px solid black;
     width: fit-content;
 }
+
 
 .addcart {
    background-color: white;
@@ -235,6 +248,7 @@ h3 {
     background-color: gray;
 }
 
+/* Här stylar jag min text för gratis frakt*/
 .shipping {
 margin-left: 70rem;
 font-size: 20px;
@@ -242,7 +256,7 @@ font-family: cursive ;
 text-decoration: underline ;
 
 }
-
+ /* Här stylar jag min slideshow genom att ge den storlek och bakgrundsfärg samt att flytta ner den med margin*/
 .slideshow {
     display: flex;
     justify-content: center;
@@ -265,6 +279,8 @@ text-decoration: underline ;
     
   }
   
+  /* Här nedan jag centrerat och stylat alla olika aspecter i min kontakt sida 
+  detta insåg jag var onödigt att göra en för varje och jag hade kunnat göra endast en för alla*/
   .phonenumber {
     display: flex;
     align-items: center;
@@ -285,7 +301,7 @@ text-decoration: underline ;
     background-color: black;
     
   }
-
+  /* Här skriver jag så att var tredje item ska vara specialt stort men detta är också onödigt då jag endast gjorde en specialstorlek*/ 
   .adress:nth-child(3n) {
     display: flex;
     justify-content: center;
@@ -321,3 +337,11 @@ color: goldenrod;
 font-size: 25px;
 }
 
+h1 {
+
+    text-align: center ;
+    font-size: 25px;
+    border: 4px black solid;
+    padding: 12rem;
+    padding-top: 10px;
+}
